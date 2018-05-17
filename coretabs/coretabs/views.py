@@ -6,4 +6,4 @@ def index(request):
 
 
 def hello(request, name):
-    return HttpResponse("Hi {}".format(ggg
+    return HttpResponse("Hi {}".format(name))
