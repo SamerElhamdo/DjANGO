@@ -1,6 +1,6 @@
 from django.db import models
 from django.urls import reverse_lazy
-# Create your models here.
+# Create your models here.a
 from django.utils.text import slugify
 
 
