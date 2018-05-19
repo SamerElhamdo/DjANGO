@@ -16,4 +16,4 @@ def product_list_by_category(request, slug):
     category = get_object_or_404(Category, slug=slug)
     return render(request, 'shop/product/category_by_product.html', {'category': category})
 
-# Create your views here.
+# Create your views heree.
