@@ -8,8 +8,7 @@
     <ul>
         {% for category in categories %}
             <li>
-                 <a href="{{ category.get_absolute_url }}">{{ category.name }}</a><br>
-                    price: {{ category.price }}
+                 <a href="{{ category.slug }}">{{ category.name }}</a><br>
             </li>
         {% endfor %}
     </ul>

@@ -1,19 +1,14 @@
 {% extends 'shop/base.html' %}
 {% block content %}
 created at: {{ product.create_at }}
-<ul>
-    <li>category: {{product.category}}</li>
+    <ul>
+        <li>category: {{product.category}}</li>
         <li>name: {{product.name}}</li>
         <li>price: {{product.price}}</li>
         <li>stock: {{product.stock}}</li>
         <li>description: {{product.decription}}</li>
-        <li>
-             <iframe width="560" height="315" src="{{product.decription}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </li>
-
-
     </ul>
-{{product.decription}}
+
 
 
 {% endblock %}
