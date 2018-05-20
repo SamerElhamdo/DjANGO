@@ -1,6 +1,6 @@
 from django.db import models
 from django.urls import reverse_lazy
-# Create your models here.a
+# Create your models here.
 from django.utils.text import slugify
 
 
@@ -23,7 +23,8 @@ class Category(models.Model):
             self.slug = slugify(self.name)
         super().save(*args, **kwargs)
 
-
+    def get_absolute_url(self):
+        return reverse_lazy('product_detail', args=[self.slug])
 
 
 

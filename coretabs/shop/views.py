@@ -3,7 +3,9 @@ from .models import Category, Product
 
 def product_list(request):
     products = Product.objects.all()
-    return render(request, 'shop/product/list.html', {'products': products})
+    categories = Category.objects.all()
+    context = {'products': products, 'categories': categories}
+    return render(request, 'shop/product/list.html', context)
 
 
 
@@ -16,4 +18,4 @@ def product_list_by_category(request, slug):
     category = get_object_or_404(Category, slug=slug)
     return render(request, 'shop/product/category_by_product.html', {'category': category})
 
-# Create your views heree.
+# Create your views here.

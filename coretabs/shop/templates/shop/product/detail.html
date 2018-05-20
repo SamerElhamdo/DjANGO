@@ -6,9 +6,14 @@ created at: {{ product.create_at }}
         <li>name: {{product.name}}</li>
         <li>price: {{product.price}}</li>
         <li>stock: {{product.stock}}</li>
-        <li>description: {{product.description}}</li>
+        <li>description: {{product.decription}}</li>
+        <li>
+             <iframe width="560" height="315" src="{{product.decription}}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </li>
+
 
     </ul>
+{{product.decription}}
 
 
 {% endblock %}
